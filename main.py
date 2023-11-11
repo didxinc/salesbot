@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 openai.api_key = st.secrets['OPENAI_API_KEY']
 
 # Load the PDF file
-pdf_file = open('didx2.pdf', 'rb')
+pdf_file = open('didx.pdf', 'rb')
 pdf_reader = PdfReader(pdf_file)
 pdf_text = ''
 for page in pdf_reader.pages:
